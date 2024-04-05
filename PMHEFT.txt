@@ -1,0 +1,52 @@
+A Predictive Priority-Based Dynamic Resource Provisioning Scheme With Load Balancing in Heterogeneous Cloud Computing
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PMHEFT
+-----------
+Predictive Priority Based Modified Heterogenous Earliest Finish Time.
+
+
+Abstract
+-----------
+In cloud computing, resource provisioning is a key challenging task due to dynamic resource
+provisioning for the applications. As per the workload requirements of the application’s resources should be
+dynamically allocated for the application. Disparities in resource provisioning produce energy, cost wastages,
+and additionally, it affects Quality of Service (QoS) and increases Service Level Agreement (SLA) violations.
+So, applications allocated resources quantity should match with the applications required resources quantity.
+Load balancing in cloud computing can be addressed through optimal scheduling techniques, whereas this
+solution belongs to the NP-Complete optimization problem category. However, the cloud providers always
+face resource management issues for variable cloud workloads in the heterogeneous system environment.
+This issue has been solved by the proposed Predictive Priority-based Modified Heterogeneous Earliest Finish
+Time (PMHEFT) algorithm, which can estimate the application’s upcoming resource demands. This research
+contributes towards developing the prediction-based model for efficient and dynamic resource provisioning
+in a heterogamous system environment to fulfill the end user’s requirements. Existing algorithms fail to meet
+the user’s Quality of Service (QoS) requirements such as makespan minimization and budget constraints
+satisfaction, or to incorporate cloud computing principles, i.e., elasticity and heterogeneity of computing
+resources. In this paper, we proposed a PMHEFT algorithm to minimize the makespan of a given workflow
+application by improving the load balancing across all the virtual machines. Experimental results show that
+our proposed algorithm’s makespan, efficiency, and power consumption are better than other algorithms.
+
+
+Algorithm: Prediction Priority Based MHEFT
+--------------------------------------------------------
+-> Build a Prediction Priority Queue for all the enrolled tasks Ti in Cloud.
+-> Set the emergency of computing the tasks.
+-> Prepare communication edges between Rj processor/resources using equations 1 to 11.
+-> Predict task load ordering bases according to the time of completion.
+-> Calculate finish time and the total time of task request.
+-> Sort the task load list with a completion time of the task and determine prediction by equations 1 to 11 until the
+     priority queue does not end.
+-> Calculate virtual machine wait time for assigning the task load.
+-> Calculate virtual machine makespan and compare with a finish time from the predictions-based priority queue.
+-> Arrange prediction-based priority queue in decreasing manner based on task order using prediction equations 1 to 11.
+-> Prepare a prediction-based priority queue based on equations 1 to 11 and then map workload with the minimum execution time processor.
+
+
+Conclusion
+--------------
+This research proposed a new method for task scheduling and loaded balancing to improve user response time and
+incoming tasks. 
+To our knowledge, PMHEFT is the algorithm to outperform HEFT, DHEFT, CHEFT, and MHEFT with
+maintaining the time complexity of O (v2.p), where v is the number of tasks and p is the number of processors. 
+Task scheduling clusters are formed using the calculation of top and bottom levels of tasks’ predictive priority values. 
+MHEFT algorithm is used for value calculation in which the average time for each task is taken into account.
